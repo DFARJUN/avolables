@@ -28,3 +28,7 @@ $(document).ready(function(){
    $("#zoneName").html(Zones__nametxt);
   });
  });
+
+ function print(){
+   window.location="/?location="+location_nametxt+"&zone="Zones__nametxt;
+ }
