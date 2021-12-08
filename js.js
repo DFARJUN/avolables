@@ -12,7 +12,7 @@ $(document).ready(function(){
     $.each(data, function(key, value){
      if (value.location_name.search(expression) != -1 || value.Zones__name.search(expression) != -1)
      {
-      $('#result').append('<li class="list-group-item link-class"> '+value.location_name+' | <span class="text-muted">'+value.Zones__name+'</span></li>');
+      $('#result').append('<li class="list-group-item link-class"><img src="'+value.image+'" height="40" width="40" class="img-thumbnail" />'+value.location_name+' | <span class="text-muted">'+value.Zones__name+'</span></li>');
      }
     });   
    });
