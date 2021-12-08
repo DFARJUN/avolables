@@ -30,5 +30,5 @@ $(document).ready(function(){
  });
 
  function printit(){
-   window.location="/?location="+location_nametxt+"&zone="Zones__nametxt;
+   window.location="/printpage?location="+location_nametxt+"&zone="+Zones__nametxt;
  }
