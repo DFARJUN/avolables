@@ -33,10 +33,10 @@ document.onload = function addlocations() {
         var i, y, xLen;
         xLen = Object.keys(quary).length;
         for (i = 0; i < xLen; i++) {
-          var div = document.createElement("div");
-           
-            var tag0 = document.createElement("h2");
-            var fullname = Math.round(quary[i].avg_picking_per_hour);
-            var text0 = document.createTextNode(fullname);
+          var newa = document.createElement("a");
+          var locationname = quary[i].location_name+"("+quary[i].Zones__name+")";
+          newa.innerHTML = locationname;
+          newa.setAttribute("href",quary[i].id)
+          document.getElementById("myDropdown").appendChild(newa)
         }
   };
