@@ -25,6 +25,6 @@ $(document).ready(function(){
    $('#search').val($.trim(click_text[0]));
    $("#result").html('');
    $("#locationName").html(location_nametxt);
-   $("#zoneName").html(Zones_nametxt);
+   $("#zoneName").html(Zones__nametxt);
   });
  });
