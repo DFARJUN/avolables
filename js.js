@@ -29,6 +29,6 @@ $(document).ready(function(){
   });
  });
 
- function print(){
+ function printit(){
    window.location="/?location="+location_nametxt+"&zone="Zones__nametxt;
  }
