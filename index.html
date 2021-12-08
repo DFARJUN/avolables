@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="jquery-1.12.2.min.js"></script>
-<script src="js.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<link href="StyleSheet.css" rel="stylesheet" />
-</head>
-<body onload="addlocations()">
-
-<h2>Search/Filter Dropdown</h2>
-<p>Click on the button to open the dropdown menu, and use the input field to search for a specific dropdown link.</p>
-
-<div class="dropdown">
-  <div id="myDropdown" class="dropdown-content">
-    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-    <a href="#about">About</a>
+ <head>
+  <title>Webslesson Tutorial | Search HTML Table Data by using JQuery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  #result {
+   position: absolute;
+   width: 100%;
+   max-width:870px;
+   cursor: pointer;
+   overflow-y: auto;
+   max-height: 400px;
+   box-sizing: border-box;
+   z-index: 1001;
+  }
+  .link-class:hover{
+   background-color:#f1f1f1;
+  }
+  </style>
+ </head>
+ <body>
+  <br /><br />
+  <div class="container" style="width:900px;">
+   <h2 align="center">בחרו את הלוקיישן הרצוי</h2>
+   <br /><br />
+   <div align="center">
+    <input type="text" name="search" id="search" placeholder="שם הלוקיישן או הזון" class="form-control" />
+   </div>
+   <ul class="list-group" id="result"></ul>
+   <br />
   </div>
-</div>
 
-</body>
+  <h1>הלוקיישן הנבחר</h1>
+  <h2 id="locationName"></h2>
+  <h2 id="zoneName"></h2>
+  <label for="tentacles">Number of lables:</label>
+
+<input type="number" id="tentacles" name="tentacles"
+       min="1" max="100">
+ </body>
 </html>
-
-
