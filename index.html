@@ -3,19 +3,6 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.dropbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #3e8e41;
-}
-
 #myInput {
   box-sizing: border-box;
   background-image: url('searchicon.png');
@@ -35,7 +22,6 @@
 }
 
 .dropdown-content {
-  display: none;
   position: absolute;
   background-color: #f6f6f6;
   min-width: 230px;
@@ -62,7 +48,6 @@
 <p>Click on the button to open the dropdown menu, and use the input field to search for a specific dropdown link.</p>
 
 <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
   <div id="myDropdown" class="dropdown-content">
     <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
     <a href="#about">About</a>
