@@ -69,10 +69,18 @@ font-weight: bold;
         width: 251px;
     }
 
-    table {margin: 0 auto;direction: rtl;zoom: 1.2;}
+    table {
+        margin: 0 auto;
+        direction: rtl;
+        zoom: 1.2;
+    }
     th {background: lightblue;font-size: 30px;padding: 10px 50px;lue;}
     button {background: #00c0c0;
     padding: 10px 40px;
     border-radius: 20px;
     border: none;
     margin: 20px 30%;}
+
+    #locationdiv{
+        display: none;
+    }

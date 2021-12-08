@@ -26,6 +26,7 @@ $(document).ready(function(){
    $("#result").html('');
    $("#locationName").html(location_nametxt);
    $("#zoneName").html(Zones__nametxt);
+   $("#locationdiv").css("display", "block");
   });
  });
 
