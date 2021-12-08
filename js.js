@@ -30,5 +30,10 @@ $(document).ready(function(){
  });
 
  function printit(){
-   window.location="/avolables/printpage?location="+location_nametxt+"&zone="+Zones__nametxt;
+   var lablesnum = document.getElementById("tentacles").value
+   window.location="/avolables/printpage?location="+location_nametxt+"&zone="+Zones__nametxt+"&lables="+lablesnum;
  }
+
+ 
+
+
