@@ -30,5 +30,5 @@ $(document).ready(function(){
  });
 
  function printit(){
-   window.location="/printpage?location="+location_nametxt+"&zone="+Zones__nametxt;
+   window.location="/avolables/printpage?location="+location_nametxt+"&zone="+Zones__nametxt;
  }
