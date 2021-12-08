@@ -1,5 +1,4 @@
-
-document.onload = function addlocations() {
+function addlocations() {
   console.log("stage1")
 
     function readTextFile(file, callback) {
@@ -43,3 +42,4 @@ document.onload = function addlocations() {
           document.getElementById("myDropdown").appendChild(newa)
         }
   };
+};
