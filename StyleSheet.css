@@ -84,3 +84,7 @@ font-weight: bold;
     #locationdiv{
         display: none;
     }
+
+    .container{
+        direction: rtl;
+    }
