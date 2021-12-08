@@ -40,6 +40,12 @@
   #onelable {
     border: 5px solid red;
     padding: 40px;
+    margin: 20px;
+    }
+
+    #onelable div{
+        width: 50%;
+        float: right;
     }
     
     #onelable h1 {
@@ -52,6 +58,8 @@
     
     #locationName,#zoneName {
         direction: rtl;
+        font-size: 50px;
+font-weight: bold;
     }
     
     img {
