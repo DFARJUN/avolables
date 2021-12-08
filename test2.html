@@ -54,8 +54,7 @@ $(document).ready(function(){
  });
  
  $('#result').on('click', 'li', function() {
-     console.log("clickkkss");
-     console.log(value.location_name);
+     console.log($(this).text().split('|'));
   var click_text = $(this).text().split('|');
   $('#search').val($.trim(click_text[0]));
   $("#result").html('');
