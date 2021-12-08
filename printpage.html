@@ -24,7 +24,7 @@ for (let i = 1; i < lables; i++) {
   var itm = document.getElementById("onelable")
   var cln = itm.cloneNode(true);
   document.getElementById("all").appendChild(cln);
-  if (i+1 == lables) { window.print();}
+  if (i+1 == lables) { window.print(); history.back()}
 }});
 
 
