@@ -11,8 +11,9 @@
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const zone = urlParams.get('zone')
-console.log(zone);
-});
+const location = urlParams.get('location')
+$("#locationName").html(location);
+$("#zoneName").html(zone);});
 
  </script>
  </head>
@@ -22,7 +23,7 @@ console.log(zone);
          <h2 id="locationName"></h2>
          <h2 id="zoneName"></h2>
          <img src="eggs.jpeg" alt="">
-        </div>
+     </div>
 
  </body>
 </html>
