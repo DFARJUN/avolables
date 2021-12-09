@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="StyleSheet.css" />
   <script src="js.js"></script>
  <script>
-     $(document).ready(function(){
+     $(onelable).load(function(){
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const zone = urlParams.get('zone')
@@ -22,7 +22,6 @@ for (let i = 1; i < lables; i++) {
   var cln = itm.cloneNode(true);
   document.getElementById("all").appendChild(cln);
 }
-
 setTimeout(
     function(){ window.print(); history.back()},
 1000)
