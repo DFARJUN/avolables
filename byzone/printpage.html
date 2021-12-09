@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>print lable</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="StyleSheet.css" />
+  <script src="js.js"></script>
+ <script>
+     $(document).ready(function(){
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const zone = urlParams.get('zone')
+const location = urlParams.get('location')
+const lables = urlParams.get('lables')
+
+$("#locationName").html(location);
+$("#zoneName").html(zone);
+for (let i = 1; i < lables; i++) { 
+  var itm = document.getElementById("onelable")
+  var cln = itm.cloneNode(true);
+  document.getElementById("all").appendChild(cln);
+}
+setTimeout(
+    function(){ window.print(); history.back()},
+    //function(){ window.print();},
+1500)
+});
+
+
+
+ </script>
+ </head>
+ <body id="all">
+     <div id="onelable">
+         <h1>ביצים - שביר</h1>
+         <div>
+            <h2 id="locationName"></h2>
+            <h2 id="zoneName"></h2>
+         </div>
+         <img id="eggsimg" src="eggs.jpeg" alt="">
+     </div>
+
+ </body>
+</html>
