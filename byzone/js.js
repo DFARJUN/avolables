@@ -29,7 +29,7 @@ $(document).ready(function(){
          $.each(data, function(key, value){
           if (value.Zones__name.search(expression) != -1)
           {
-           $('#locationdivul').append('<li class="list-group-item link-class"><input type="checkbox" id="cb'+value.id+'>'+value.location_name+'</li>');
+           $('#locationdivul').append('<li class="list-group-item link-class"><input type="checkbox" id="cb'+value.id+'">'+value.location_name+'</li>');
           }
          });   
         });      
