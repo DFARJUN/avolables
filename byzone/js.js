@@ -33,13 +33,16 @@ $(document).ready(function(){
            $('#locationdivul').append('<li class="list-group-item link-class"><input type="checkbox" id="cb'+value.id+'" checked>'+value.location_name+'</li>');
           }
          });   
-        });      
+        }); 
   });
  });
 
  function printit(){
-   var lablesnum = document.getElementById("tentacles").value
-   window.location="/avolables/printpage?location="+location_nametxt+"&zone="+Zones__nametxt+"&lables="+lablesnum;
+  var result = [].map.call(document.getElementById("locationdivul").getElementsByTagName("input"), function(o) {
+    return o.id,o.checked;
+});
+
+console.log(result);
  }
 
  
