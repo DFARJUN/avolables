@@ -19,9 +19,11 @@ $(document).ready(function(){
   });
   
   $('#result').on('click', 'li', function() {
+    console.log("test")
         $('#locationdivul').html('');
         $('#state').val('');
         var searchField = $(this).text().split('|')[0]
+        console.log(searchField);
         var expression = new RegExp(searchField, "i");
         $.getJSON('locations.json', function(data) {
          $.each(data, function(key, value){
