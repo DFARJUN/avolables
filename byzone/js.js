@@ -19,6 +19,7 @@ $(document).ready(function(){
   });
   
   $('#result').on('click', 'li', function() {
+        $('#result').html('');
         $('#locationdivul').html('');
         $('#state').val('');
         var searchField = $(this).text().split('|')[0]
