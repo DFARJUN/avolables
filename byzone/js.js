@@ -39,7 +39,7 @@ $(document).ready(function(){
 
  function printit(){
   var result = [].map.call(document.getElementById("locationdivul").getElementsByTagName("input"), function(o) {
-    return o.id,o.checked;
+    return (o.id,o.checked);
 });
 
 console.log(result);
