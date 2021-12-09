@@ -19,17 +19,16 @@ $(document).ready(function(){
   });
   
   $('#result').on('click', 'li', function() {
-    console.log("test")
         $('#locationdivul').html('');
         $('#state').val('');
         var searchField = $(this).text().split('|')[0]
-        console.log(searchField);
         var expression = new RegExp(searchField, "i");
+        $("#locationdiv").css("display", "block");
         $.getJSON('locations.json', function(data) {
          $.each(data, function(key, value){
           if (value.Zones__name.search(expression) != -1)
           {
-           $('#locationdivul').append('<li class="list-group-item link-class">'+value.Zones__name+'</li>');
+           $('#locationdivul').append('<li class="list-group-item link-class">'+value.location_name+'</li>');
           }
          });   
         });      
