@@ -40,11 +40,11 @@
   #onelable {
     border: 5px solid red;
     padding: 40px;
-    margin: 20px;
+    margin: 2%;width: 96vw;height: 62vw;
     }
 
     #onelable div{
-        width: 50%;
+        width: 60%;
         float: right;
     }
     
@@ -53,21 +53,21 @@
         font-weight: bold;
         font-size: 80px;
         margin-top: -40px;
-        text-align: center;
+        text-align: center;font-size: 11vw;
     }
     
     #locationName,#zoneName {
         direction: rtl;
-        font-size: 50px;
+        font-size: 8vw;
     }
 
     #locationName{
-font-weight: bold;
+font-weight: bold;font-size: 12vw;
     }
     
     #eggsimg {
-        width: 251px;
-    }
+        width: 33vw;margin-top: 11vw;margin-left: 7vw;vw;
+    margin-left: -3vw;position: absolute;}
 
     table {
         margin: 0 auto;
