@@ -58,11 +58,11 @@
     
     #locationName,#zoneName {
         direction: rtl;
-        font-size: 10mm;
+        font-size: 8mm;
     }
 
     #locationName{
-font-weight: bold;font-size: 15mm;margin-top: 5mm;
+font-weight: bold;font-size: 10mm;margin-top: 5mm;
     }
     
     #eggsimg {
