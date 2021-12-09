@@ -22,6 +22,7 @@ $(document).ready(function(){
         $('#result').html('');
         $('#locationdivul').html('');
         $('#state').val('');
+        $('#locationdivul').append('<h2>'+value.Zones__name+'</h2>')
         var searchField = $(this).text().split('|')[0]
         var expression = new RegExp(searchField, "i");
         $("#locationdiv").css("display", "block");
