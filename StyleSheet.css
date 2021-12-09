@@ -44,12 +44,12 @@
     }
 
     #onelable div{
-        width: 60%;
+        width: 65%;
         float: right;
     }
     
     #onelable h1 {
-        color: red;
+        color: red !important;
         font-weight: bold;
         font-size: 80px;
         margin-top: -40px;
@@ -58,11 +58,11 @@
     
     #locationName,#zoneName {
         direction: rtl;
-        font-size: 8vw;
+        font-size: 5vw;
     }
 
     #locationName{
-font-weight: bold;font-size: 12vw;
+font-weight: bold;font-size: 7vw;margin-top: 6vw;
     }
     
     #eggsimg {
