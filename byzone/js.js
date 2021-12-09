@@ -12,7 +12,7 @@ $(document).ready(function(){
     $.each(data, function(key, value){
      if (value.location_name.search(expression) != -1 || value.Zones__name.search(expression) != -1)
      {
-      $('#result').append('<li class="list-group-item link-class">'+value.Zones__name+'</li>');
+      $('#result').append('<li class="list-group-item link-class"><input type="checkbox" id="cb'+value.id+'>'+value.Zones__name+'</li>');
      }
     });   
    });
