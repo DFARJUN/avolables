@@ -27,6 +27,7 @@ $(document).ready(function(){
    $("#locationName").html(location_nametxt);
    $("#zoneName").html(Zones__nametxt);
    $("#locationdiv").css("display", "block");
+   document.getElementById("tentacles").value = 1;
   });
  });
 
