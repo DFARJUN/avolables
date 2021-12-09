@@ -27,7 +27,7 @@ $(document).ready(function(){
          $.each(data, function(key, value){
           if (value.Zones__name.search(expression) != -1)
           {
-           $('#locationdiv').append('<li class="list-group-item link-class"><img src="'+value.image+'" height="40" width="100" class="img-thumbnail" />'+value.Zones__name+'</li>');
+           $('#locationdiv').append('<li class="list-group-item link-class">'+value.Zones__name+'</li>');
           }
          });   
         });      
