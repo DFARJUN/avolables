@@ -93,3 +93,16 @@ font-weight: bold;font-size: 10mm;margin-top: 5mm;
     @media print {
         #onelable {page-break-after: always;}
       }
+
+      #locationdiv{
+        width: 50%;
+        margin: 10px 25%;;
+      }
+      
+      #locationdivul{
+        direction: rtl;
+      }
+
+      #locationdivul input{
+        margin-left: 10px;
+      }
