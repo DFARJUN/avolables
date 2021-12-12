@@ -63,8 +63,22 @@ $(document).ready(function(){
     }
 });
 
-console.log(result);
- }
+
+$( "#result" ).change(function() {
+  uniqueLi = {};
+
+  $("#result li").each(function () {
+    var thisVal = $(this).text();
+  
+    if ( !(thisVal in uniqueLi) ) {
+      uniqueLi[thisVal] = "";
+    } else {
+      $(this).remove();
+    }
+  })
+  console.log(uniqueLi);
+});
+
 
  
 
