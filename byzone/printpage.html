@@ -18,6 +18,8 @@ const lables = locations.length;
 for (let i = 0; i < lables; i++) { 
     var searchField = locations[i];
    var expression = new RegExp(searchField, "i");
+   console.log(searchField);
+   console.log(expression);
    $.getJSON('locations.json', function(data) {
     $.each(data, function(key, value){
      if (value.id.search(expression) != -1)
