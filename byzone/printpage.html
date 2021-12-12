@@ -24,9 +24,7 @@ for (let i = 0; i < lables; i++) {
    var expression = new RegExp(searchField, "i");
    $.getJSON('../locations.json', function(data) {
     $.each(data, function(key, value){
-        console.log(value.id)
         var thisis = value.id.toString();
-        console.log(thisis);
      if (thisis.search(expression) != -1 || value.Zones__name.search(expression) != -1)
      {
         location = value.location_name;
