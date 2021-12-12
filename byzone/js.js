@@ -17,20 +17,23 @@ $(document).ready(function(){
     });   
    });
 
-var liText = '', liList = $('#result li'), listForRemove = [];
+   function removeduplicate(){
+    var liText = '', liList = $('#result li'), listForRemove = [];
 
-$(liList).each(function () {
+    $(liList).each(function () {
+        
+      var text = $(this).text();
     
-  var text = $(this).text();
-
-  if (liText.indexOf('|'+ text + '|') == -1)
-    liText += '|'+ text + '|';
-  else
-    listForRemove.push($(this));
-    
-});
-    
-$(listForRemove).each(function () { $(this).remove(); });
+      if (liText.indexOf('|'+ text + '|') == -1)
+        liText += '|'+ text + '|';
+      else
+        listForRemove.push($(this));
+        
+    });
+        
+    $(listForRemove).each(function () { $(this).remove(); });
+   }
+   removeduplicate();
 
 
 
