@@ -61,7 +61,7 @@ $(listForRemove).each(function () { $(this).remove(); });
 });
 
 console.log(result);
-//window.location="/avolables/printpage?locations="+result;
+window.location="/avolables/printpage?locations="+result;
  }
 
 
