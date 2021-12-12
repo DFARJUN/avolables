@@ -11,9 +11,7 @@
      $(document).ready(function(){
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-const zone = urlParams.get('zone')
-const location = urlParams.get('location')
-const lables = urlParams.get('lables')
+const locations = urlParams.get('locations')
 
 $("#locationName").html(location);
 $("#zoneName").html(zone);
@@ -23,7 +21,7 @@ for (let i = 1; i < lables; i++) {
   document.getElementById("all").appendChild(cln);
 }
 setTimeout(
-    function(){ window.print(); history.back()},
+    //function(){ window.print(); history.back()},
     //function(){ window.print();},
 1500)
 });

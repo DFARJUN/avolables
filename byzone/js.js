@@ -29,7 +29,7 @@ $(liList).each(function () {
 });
     
 $(listForRemove).each(function () { $(this).remove(); });
-   
+
    });
   });
   
@@ -55,11 +55,13 @@ $(listForRemove).each(function () { $(this).remove(); });
  function printit(){
   var result = [].map.call(document.getElementById("locationdivul").getElementsByTagName("input"), function(o) {
     if(o.checked){
-      return o.id;
+      var thisid = o.id.replace('cb', '');
+      return thisid;
     }
 });
 
 console.log(result);
+//window.location="/avolables/printpage?locations="+result;
  }
 
 
