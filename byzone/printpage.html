@@ -27,13 +27,17 @@ for (let i = 0; i < lables; i++) {
      if (value.id.search(expression) != -1)
      {
 location = value.location_name;
+console.log("DD"+location)
 zone = value.Zones__name;
+console.log("ZZ"+zone)
     }
     });
 });
     var itm = document.getElementById("onelable")
   var cln = itm.cloneNode(true);
   document.getElementById("all").appendChild(cln);
+  console.log(zone)
+  console.log($(".locationName")[i-1].)
     $(".locationName")[i-1].innerHTML=location;
     $(".zoneName")[i-1].innerHTML=zone;
 }
