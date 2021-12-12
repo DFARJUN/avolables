@@ -18,6 +18,7 @@ const lables = locations.length;
 for (let i = 0; i < lables; i++) { 
     let location
     let zone
+    $.ajaxSetup({ cache: false });
     var searchField = locations[i];
    var expression = new RegExp(searchField, "i");
    console.log(searchField);
