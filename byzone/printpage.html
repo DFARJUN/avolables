@@ -20,7 +20,7 @@ for (let i = 0; i < lables; i++) {
 
 
     $.ajaxSetup({ cache: false });
-   var searchField = (locations[i]).tostring();
+   var searchField = locations[i];
    var expression = new RegExp(searchField, "i");
    $.getJSON('../locations.json', function(data) {
     $.each(data, function(key, value){
