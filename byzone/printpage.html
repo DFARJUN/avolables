@@ -11,9 +11,8 @@
      $(document).ready(function(){
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-const locations = urlParams.get('locations')
+const locations = urlParams.get('locations').split(",")
 const lables = locations.length;
-
 
 for (let i = 0; i < lables; i++) { 
     let location
@@ -30,9 +29,9 @@ for (let i = 0; i < lables; i++) {
      if (thisis.search(expression) != -1 || value.Zones__name.search(expression) != -1)
      {
         location = value.location_name;
-console.log("DD"+location)
-zone = value.Zones__name;
-console.log("ZZ"+zone)     }
+        console.log("DD"+location)
+        zone = value.Zones__name;
+        console.log("ZZ"+zone)     }
     });
 });
 
