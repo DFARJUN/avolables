@@ -18,20 +18,18 @@ $(document).ready(function(){
    });
 
    function removeduplicate(){
-    var liText = '', liList = $('#result li'), listForRemove = [];
+    uniqueLi = {};
 
-    $(liList).each(function () {
-        
-      var text = $(this).text();
+    $("#result li").each(function () {
+      var thisVal = $(this).text();
     
-      if (liText.indexOf('|'+ text + '|') == -1)
-        liText += '|'+ text + '|';
-      else
-        listForRemove.push($(this));
-        
-    });
-        
-    $(listForRemove).each(function () { $(this).remove(); });
+      if ( !(thisVal in uniqueLi) ) {
+        uniqueLi[thisVal] = "";
+      } else {
+        $(this).remove();
+      }
+    })
+    console.log(uniqueLi);
    }
    removeduplicate();
 
