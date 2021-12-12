@@ -16,6 +16,8 @@ const lables = locations.length;
 
 
 for (let i = 0; i < lables; i++) { 
+    let location
+    let zone
     var searchField = locations[i];
    var expression = new RegExp(searchField, "i");
    console.log(searchField);
@@ -24,8 +26,8 @@ for (let i = 0; i < lables; i++) {
     $.each(data, function(key, value){
      if (value.id.search(expression) != -1)
      {
-let location = value.location_name;
-let zone = value.Zones__name;
+location = value.location_name;
+zone = value.Zones__name;
     }
     });
 });
