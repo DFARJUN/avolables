@@ -14,27 +14,23 @@ $(document).ready(function(){
      {
       $('#result').append('<li class="list-group-item link-class">'+value.Zones__name+'</li>');
      }
-    });   
-   });
+    });
+    var liText = '', liList = $('#result li'), listForRemove = [];
 
-   function removeduplicate(){
-    uniqueLi = {};
-
-    $("#result li").each(function () {
-      var thisVal = $(this).text();
+$(liList).each(function () {
     
-      if ( !(thisVal in uniqueLi) ) {
-        uniqueLi[thisVal] = "";
-      } else {
-        $(this).remove();
-      }
-    })
-    console.log(uniqueLi);
-   }
-   removeduplicate();
+  var text = $(this).text();
 
-
-
+  if (liText.indexOf('|'+ text + '|') == -1)
+    liText += '|'+ text + '|';
+  else
+    listForRemove.push($(this));
+    
+});
+    
+$(listForRemove).each(function () { $(this).remove(); });
+   
+   });
   });
   
   $('#result').on('click', 'li', function() {
@@ -65,23 +61,5 @@ $(document).ready(function(){
 
 console.log(result);
  }
-
-
-
- $( "#result" ).change(function() {
-    uniqueLi = {};
-
-    $("#result li").each(function () {
-      var thisVal = $(this).text();
-    
-      if ( !(thisVal in uniqueLi) ) {
-        uniqueLi[thisVal] = "";
-      } else {
-        $(this).remove();
-      }
-    })
-    console.log(uniqueLi);
-  });
-
 
 
