@@ -21,8 +21,6 @@ for (let i = 0; i < lables; i++) {
     $.ajaxSetup({ cache: false });
     var searchField = locations[i];
    var expression = new RegExp(searchField, "i");
-   console.log(searchField);
-   console.log(expression);
    $.getJSON('locations.json', function(data) {
     $.each(data, function(key, value){
         var thisis = value.id.tostring();
