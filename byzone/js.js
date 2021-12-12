@@ -8,7 +8,7 @@ $(document).ready(function(){
    $('#state').val('');
    var searchField = $('#search').val();
    var expression = new RegExp(searchField, "i");
-   $.getJSON('locations.json', function(data) {
+   $.getJSON('../locations.json', function(data) {
     $.each(data, function(key, value){
      if (value.location_name.search(expression) != -1 || value.Zones__name.search(expression) != -1)
      {
@@ -41,7 +41,7 @@ $(listForRemove).each(function () { $(this).remove(); });
         var searchField = $(this).text().split('|')[0]
         var expression = new RegExp(searchField, "i");
         $("#locationdiv").css("display", "block");
-        $.getJSON('locations.json', function(data) {
+        $.getJSON('../locations.json', function(data) {
          $.each(data, function(key, value){
           if (value.Zones__name.search(expression) != -1)
           {
