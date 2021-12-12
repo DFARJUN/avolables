@@ -24,7 +24,7 @@ for (let i = 0; i < lables; i++) {
    console.log(expression);
    $.getJSON('locations.json', function(data) {
     $.each(data, function(key, value){
-     if (value.id.search(expression) != -1)
+     if (value.id.search(expression) != -1 || value.Zones__name.search(expression) != -1)
      {
 location = value.location_name;
 console.log("DD"+location)
