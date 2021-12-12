@@ -18,22 +18,25 @@ const lables = locations.length;
 for (let i = 0; i < lables; i++) { 
     let location
     let zone
+
+
     $.ajaxSetup({ cache: false });
-    var searchField = locations[i];
+   var searchField = locations[i].tostring();
    var expression = new RegExp(searchField, "i");
    $.getJSON('../locations.json', function(data) {
     $.each(data, function(key, value){
-        var thisis = value.Zones__name.tostring();
+        var thisis = value.id.tostring();
         console.log(thisis)
-     if(thisis.search(expression) != -1 || value.Zones__name.search(expression) != -1)
+     if (thisis.search(expression) != -1 || value.Zones__name.search(expression) != -1)
      {
-location = value.location_name;
+        location = value.location_name;
 console.log("DD"+location)
 zone = value.Zones__name;
-console.log("ZZ"+zone)
-    }
+console.log("ZZ"+zone)     }
     });
 });
+
+
     var itm = document.getElementById("onelable")
   var cln = itm.cloneNode(true);
   document.getElementById("all").appendChild(cln);
